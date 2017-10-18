@@ -11,6 +11,10 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
+	background:"ececec";
+	padding:4em;
+	font-family:"Ariel";
+	
   margin: 0; }
 
 article,

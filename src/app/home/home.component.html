@@ -16,13 +16,12 @@
               <h3 class="panel-title" data-translate="home.subtitle">Greetings</h3>
             </div>
             <div class="panel-body">
-             This
- is korpikoodarit homepage. The coders focus on open source technologies
- raging from open source web frameworks to mobile android development. 
-Current issues range from using JHpister framework combined with 
-Angular-JS and futher focus on Cassandra, Value object scaling storing 
-solution for huge volumes of data. In addition,Focus on Android mobile 
-development.
+              <div id="animation_content" [@listAnimation]="welcome_lines.length">
+                    <div id="welcome_line" *ngFor="let line of welcome_lines">
+                    {{line}}
+                    </div>
+              </div>
+           
             </div>
                  
           </div>
