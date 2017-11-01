@@ -1,43 +1,62 @@
- <div class="row">
-        <div class="col-md-4">
-            
-           
-            <span class="hipster img-responsive img-rounded"></span>
-        </div>
-        <div class="col-md-8" >
-            
-            
-            
-           
-            <h1 data-translate="home.title">Welcome!</h1>
-            
-             <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title" data-translate="home.subtitle">Greetings</h3>
-            </div>
-            <div class="panel-body">
-              <div id="animation_content" [@listAnimation]="welcome_lines.length">
-                    <div id="welcome_line" *ngFor="let line of welcome_lines">
+
+<div class="col-md-4">
+
+	<span class="hipster img-responsive img-rounded"></span>
+</div>
+<div class="col-md-8">
+
+
+
+
+	<h1 data-translate="home.title">Welcome!</h1>
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title" data-translate="home.subtitle">Greetings</h3>
+		</div>
+		<div class="panel-body">
+			<!--  <div id="animation_content" [@listAnimation]="welcome_lines.length">
+             
+                    <div id="welcome_line_col" *ngFor="let line of welcome_lines">
                     {{line}}
                     </div>
-              </div>
-           
-            </div>
-                 
-          </div>
-             <div class="list-group" class="well">
             
-            <a href="http://www.korpikoodarit.eu/" target="_blank" data-translate="home.link.homepage" class="list-group-item">
-              <h4 class="list-group-item-heading"  data-translate="home.question">If you have any question :</h4>
-              <p class="list-group-item-text"> <span data-translate="home.like" >If you would like to hear more about us send us email pasi@korpikoodarit.eu </span> </p>
-            </a>
-           
-          </div>
-           
-        </div>
-    </div>
- <div class="footer" >
-            <p data-translate="footer">Korpikoodarit  email: pasi@korpikoodarit.eu
- 
-         </p>
-        </div>
+              </div>-->
+			<div @explainerAnim>
+				<div class="welcome_line_col">
+					This is korpikoodarit homepage,
+				</div>
+				<div class="welcome_line_col">
+					The coders focus on open source technologies raging from open source web frameworks to mobile android development.
+				</div>
+				<div class="welcome_line_col">
+					Current issues range from using JHpister framework combined with Angular and further focus on Spring Boot.
+				</div>
+				<div class="welcome_line_col">
+					n addition,Focus on Android mobile development
+				</div>
+				<div class="welcome_line_col">
+					Coding is a way of living
+				</div>
+			</div>
+			<div class="list-group" class="well">
+
+				<a href="http://www.korpikoodarit.eu/" target="_blank"
+					data-translate="home.link.homepage" class="list-group-item">
+					<h4 class="list-group-item-heading" data-translate="home.question">If
+						you have any question :</h4>
+					<p class="list-group-item-text">
+						<span data-translate="home.like">If you would like to hear
+							more about us send us email pasi@korpikoodarit.eu </span>
+					</p>
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<p data-translate="footer">Korpikoodarit email:
+		pasi@korpikoodarit.eu</p>
+</div>
